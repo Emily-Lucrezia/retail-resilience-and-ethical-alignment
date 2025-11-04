@@ -109,17 +109,50 @@
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-links a');
 
-  toggleButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    header.classList.toggle('dark-mode');
-    footer.classList.toggle('dark-mode');
-    sections.forEach(el => el.classList.toggle('dark-mode'));
-    navLinks.forEach(el => el.classList.toggle('dark-mode'));
+  // Load saved preference
+  if (localStorage.getItem('theme') === 'dark') {
+    enableDarkMode();
+  }
 
-    // 🌙/☀️ icon and label toggle
-    toggleButton.textContent = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+  toggleButton.addEventListener('click', () => {
+    if (body.classList.contains('dark-mode')) {
+      disableDarkMode();
+    } else {
+      enableDarkMode();
+    }
+  });
+
+  function enableDarkMode() {
+    body.classList.add('dark-mode');
+    header.classList.add('dark-mode');
+    footer.classList.add('dark-mode');
+    sections.forEach(el => el.classList.add('dark-mode'));
+    navLinks.forEach(el => el.classList.add('dark-mode'));
+    toggleButton.textContent = '☀️ Light Mode';
+    localStorage.setItem('theme', 'dark');
+  }
+
+  function disableDarkMode() {
+    body.classList.remove('dark-mode');
+    header.classList.remove('dark-mode');
+    footer.classList.remove('dark-mode');
+    sections.forEach(el => el.classList.remove('dark-mode'));
+    navLinks.forEach(el => el.classList.remove('dark-mode'));
+    toggleButton.textContent = '🌙 Dark Mode';
+    localStorage.setItem('theme', 'light');
+  }
+</script>
+<script>
+  const backToTop = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 </script>
-  
+<button id="backToTop" aria-label="Back to top" title="Back to top">⬆️</button>  
 </body>
 </html>
