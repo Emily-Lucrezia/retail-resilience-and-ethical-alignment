@@ -7,23 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <div class="header-container">
-      <h1>Retail Sector Scoring Report</h1>
-      <p class="subtitle">Capstone Project · Emily Lucrezia Buffa · 2025</p>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#summary">Executive Summary</a></li>
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+  <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙 Dark Mode</button>
+  <div class="header-container">
+    <h1>Retail Sector Scoring Report</h1>
+    <p class="subtitle">Capstone Project · Emily Lucrezia Buffa · 2025</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#summary">Executive Summary</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#methods">Methods</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
   <section id="summary" class="summary">
     <h2>Executive Summary</h2>
     <p>
@@ -117,8 +116,12 @@
     sections.forEach(el => el.classList.toggle('dark-mode'));
     navLinks.forEach(el => el.classList.toggle('dark-mode'));
 
-    // Toggle icon
-    toggleButton.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    // 🌙/☀️ icon and label toggle
+    if (body.classList.contains('dark-mode')) {
+      toggleButton.textContent = '☀️ Light Mode';
+    } else {
+      toggleButton.textContent = '🌙 Dark Mode';
+    }
   });
 </script>
 </body>
