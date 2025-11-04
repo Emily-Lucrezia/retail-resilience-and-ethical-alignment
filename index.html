@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <button id="darkModeToggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
+  <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
   <title>Retail Sector Scoring Report</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -102,14 +102,23 @@
   <footer>
     Emily Lucrezia Buffa | Capstone Project
   </footer>
-<script>
+  <script>
   const toggleButton = document.getElementById('darkModeToggle');
+  const body = document.body;
+  const header = document.querySelector('header');
+  const footer = document.querySelector('footer');
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
   toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    document.querySelectorAll('section').forEach(el => el.classList.toggle('dark-mode'));
-    document.querySelector('header').classList.toggle('dark-mode');
-    document.querySelector('footer').classList.toggle('dark-mode');
-    document.querySelectorAll('.nav-links a').forEach(el => el.classList.toggle('dark-mode'));
+    body.classList.toggle('dark-mode');
+    header.classList.toggle('dark-mode');
+    footer.classList.toggle('dark-mode');
+    sections.forEach(el => el.classList.toggle('dark-mode'));
+    navLinks.forEach(el => el.classList.toggle('dark-mode'));
+
+    // Toggle icon
+    toggleButton.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
   });
 </script>
 </body>
