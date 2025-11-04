@@ -102,6 +102,15 @@
   <footer>
     Emily Lucrezia Buffa | Capstone Project
   </footer>
-
+<script>
+  const toggleButton = document.getElementById('darkModeToggle');
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    document.querySelectorAll('section').forEach(el => el.classList.toggle('dark-mode'));
+    document.querySelector('header').classList.toggle('dark-mode');
+    document.querySelector('footer').classList.toggle('dark-mode');
+    document.querySelectorAll('.nav-links a').forEach(el => el.classList.toggle('dark-mode'));
+  });
+</script>
 </body>
 </html>
