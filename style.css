@@ -17,6 +17,7 @@ body {
 
 /* Header and Navigation */
 header {
+  position: relative; /* ✅ Needed for toggle positioning */
   background-color: #2c3e50;
   color: #ffffff;
   padding: 40px 20px;
@@ -54,6 +55,26 @@ nav {
 .nav-links a:focus {
   background-color: #1abc9c;
   outline: 2px solid #ffffff;
+}
+
+/* ✅ Toggle Button Styling — Top Right */
+#darkModeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 6px 12px;
+  font-size: 0.9em;
+  background-color: #ffffff;
+  color: #2c3e50;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark-mode #darkModeToggle {
+  background-color: #333;
+  color: #ffffff;
 }
 
 /* Section Styling */
@@ -117,23 +138,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* Toggle Button Styling */
-#darkModeToggle {
-  margin-top: 10px;
-  padding: 6px 12px;
-  font-size: 0.9em;
-  background-color: #ffffff;
-  color: #2c3e50;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-body.dark-mode #darkModeToggle {
-  background-color: #333;
-  color: #ffffff;
 }
 
 /* Dark Mode Styles */
