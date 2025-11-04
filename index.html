@@ -9,7 +9,7 @@
 
   <h1>Retail Sector Scoring Report</h1>
 
-  <div class="section summary">
+  <section class="summary">
     <h2>Executive Summary</h2>
     <p>
       This report evaluates selected UK retail sectors across three dimensions: <strong>resilience</strong>, <strong>volatility</strong>, and <strong>ethical alignment</strong>. Resilience measures the percentage change in Value Index from 2020 to 2025, indicating how well each sector recovered post-pandemic. Volatility is assessed via the standard deviation of Volume Index, capturing fluctuations in consumer activity. Ethical alignment is manually scored based on sector mappings to culturally embedded and locally oriented subclusters.
@@ -20,16 +20,16 @@
     <p>
       These insights support targeted policy and investment decisions, highlighting sectors that combine economic recovery with ethical value. The scoring framework balances quantitative metrics with qualitative interpretation, offering a transparent and accessible tool for strategic evaluation.
     </p>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Introduction</h2>
     <p>
       The COVID-19 pandemic disrupted retail activity across the UK, prompting shifts in consumer behaviour, supply chains, and sector performance. As the economy stabilises, understanding which sectors have recovered — and which align with ethical and cultural priorities — is essential for guiding investment, policy, and innovation. This report focuses on four sectors: Mail Order, Specialist Food Stores, Footwear and Leather Goods, and Books, Newspapers & Periodicals.
     </p>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Methods</h2>
     <p>
       We used the Office for National Statistics Retail Sales Index (ONS RSI) to analyse Value and Volume Index trends from 2019 to 2025. Resilience was calculated as the percentage change in Value Index from 2020 to 2025. Volatility was measured using the standard deviation of Volume Index across the same period. Ethical alignment scores were manually assigned based on sector mappings to Pen Portrait subclusters, reflecting cultural embeddedness and local orientation.
@@ -37,38 +37,48 @@
     <p>
       All scores were ranked manually to ensure consistency across visualisations. The final scoring table and heatmap use integer scores from 1 (lowest) to 5 (highest), aligned with the dashboard bar charts.
     </p>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Results</h2>
     <p>
-      The scoring table and heatmap below show how each sector performs across the three dimensions. The dashboard visualisations provide a breakdown of each score individually.
+      The following visualisations present the analytical journey from raw data to final scoring. Time series charts show sector trends over time, followed by scoring breakdowns and a composite dashboard.
     </p>
 
+    <h3>Value Index Trends (2019–2025)</h3>
+    <img src="value_index_trends.png" alt="Line chart showing Value Index trends for selected retail sectors from 2019 to 2025">
+
+    <h3>Volume Index Trends (2019–2025)</h3>
+    <img src="volume_index_trends.png" alt="Line chart showing Volume Index trends for selected retail sectors from 2019 to 2025">
+
+    <h3>Estimated Price Index Trends</h3>
+    <img src="price_index_trends.png" alt="Line chart showing estimated Price Index trends derived from Value and Volume Index data">
+
     <h3>Sector Scoring Table and Heatmap</h3>
-    <img src="heatmap_scores.png" alt="Sector Scores Table and Heatmap">
+    <img src="heatmap_scores.png" alt="Heatmap and table comparing four retail sectors across resilience, volatility, and ethical scores">
 
     <h3>Resilience Scores by Sector</h3>
-    <img src="resilience_scores.png" alt="Resilience Scores Bar Chart">
+    <img src="resilience_scores.png" alt="Bar chart showing resilience scores by sector based on Value Index change from 2020 to 2025">
 
     <h3>Volatility Scores by Sector</h3>
-    <img src="volatility_scores.png" alt="Volatility Scores Bar Chart">
+    <img src="volatility_scores.png" alt="Bar chart ranking sectors by stability using standard deviation of Volume Index">
 
     <h3>Ethical Alignment Scores by Sector</h3>
-    <img src="ethical_scores.png" alt="Ethical Scores Bar Chart">
+    <img src="ethical_scores.png" alt="Bar chart showing ethical alignment scores based on cultural and local subcluster mapping">
 
     <h3>Sector Scoring Dashboard</h3>
-    <img src="summary_dashboard.png" alt="Composite Dashboard of All Scores">
-  </div>
+    <img src="summary_dashboard.png" alt="Side-by-side dashboard comparing resilience, volatility, and ethical scores for four sectors">
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Conclusion</h2>
     <p>
       This scoring framework highlights the complexity of post-pandemic recovery. Sectors like Specialist Food Stores demonstrate both economic resilience and ethical strength, while others like Mail Order show stability but limited cultural alignment. By combining quantitative metrics with qualitative insights, this report offers a balanced perspective for decision-makers seeking to support sustainable and locally embedded retail growth.
     </p>
-  </div>
+  </section>
 
   <footer>
+    2025 Emily Lucrezia Buffa | Capstone Project | Professional Certificate in Data Analytics
   </footer>
 
 </body>
