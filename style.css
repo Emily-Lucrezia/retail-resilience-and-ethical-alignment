@@ -118,3 +118,49 @@ footer {
     align-items: center;
   }
 }
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+header.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+section.dark-mode {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  box-shadow: none;
+}
+
+footer.dark-mode {
+  background-color: #1a1a1a;
+  color: #cccccc;
+}
+
+.nav-links a.dark-mode {
+  background-color: #444;
+  color: #ffffff;
+}
+.nav-links a.dark-mode:hover,
+.nav-links a.dark-mode:focus {
+  background-color: #1abc9c;
+}
+
+/* Toggle button styling */
+#darkModeToggle {
+  margin-top: 20px;
+  padding: 10px 16px;
+  font-size: 1em;
+  background-color: #ffffff;
+  color: #2c3e50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body.dark-mode #darkModeToggle {
+  background-color: #333;
+  color: #ffffff;
+}
