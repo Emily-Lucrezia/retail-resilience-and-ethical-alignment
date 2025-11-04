@@ -118,75 +118,42 @@ footer {
     align-items: center;
   }
 }
-/* Dark mode styles */
-body.dark-mode {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-}
 
-header.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-section.dark-mode {
-  background-color: #2a2a2a;
-  color: #e0e0e0;
-  box-shadow: none;
-}
-
-footer.dark-mode {
-  background-color: #1a1a1a;
-  color: #cccccc;
-}
-
-.nav-links a.dark-mode {
-  background-color: #444;
-  color: #ffffff;
-}
-.nav-links a.dark-mode:hover,
-.nav-links a.dark-mode:focus {
-  background-color: #1abc9c;
-}
-
-/* Toggle button styling */
+/* Toggle Button Styling */
 #darkModeToggle {
-  margin-top: 20px;
-  padding: 10px 16px;
-  font-size: 1em;
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 0.9em;
   background-color: #ffffff;
   color: #2c3e50;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 body.dark-mode #darkModeToggle {
   background-color: #333;
   color: #ffffff;
 }
 
-/* Dark mode body and section backgrounds */
+/* Dark Mode Styles */
 body.dark-mode {
   background-color: #1e1e1e;
   color: #e0e0e0;
+}
+header.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
 }
 section.dark-mode {
   background-color: #262626;
   color: #e0e0e0;
   box-shadow: none;
 }
-
-/* Header and footer in dark mode */
-header.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
 footer.dark-mode {
   background-color: #1a1a1a;
   color: #cccccc;
 }
-
-/* Headings in dark mode */
 body.dark-mode h2,
 section.dark-mode h2 {
   color: #ffffff;
@@ -197,8 +164,6 @@ section.dark-mode h3 {
   color: #e0e0e0;
   font-weight: 500;
 }
-
-/* Navigation links in dark mode */
 .nav-links a.dark-mode {
   background-color: #444;
   color: #ffffff;
@@ -208,14 +173,12 @@ section.dark-mode h3 {
   background-color: #1abc9c;
   outline: 2px solid #ffffff;
 }
-
-/* Image borders in dark mode */
 body.dark-mode img {
   border-color: #555;
   box-shadow: 2px 2px 6px rgba(255,255,255,0.1);
 }
 
-/* Smooth transitions */
+/* Smooth Transitions */
 body,
 header,
 footer,
@@ -226,21 +189,4 @@ img,
 .nav-links a,
 #darkModeToggle {
   transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
-}
-
-/* Toggle button styling */
-#darkModeToggle {
-  margin-top: 20px;
-  padding: 10px 16px;
-  font-size: 1.2em;
-  background-color: #ffffff;
-  color: #2c3e50;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-body.dark-mode #darkModeToggle {
-  background-color: #333;
-  color: #ffffff;
 }
