@@ -8,7 +8,6 @@
 </head>
 <body>
   <header>
-  <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙 Dark Mode</button>
   <div class="header-container">
     <h1>Retail Sector Scoring Report</h1>
     <p class="subtitle">Capstone Project · Emily Lucrezia Buffa · 2025</p>
@@ -101,7 +100,8 @@
   <footer>
     Emily Lucrezia Buffa | Capstone Project
   </footer>
-  <script>
+  
+<script>
   const toggleButton = document.getElementById('darkModeToggle');
   const body = document.body;
   const header = document.querySelector('header');
@@ -117,12 +117,9 @@
     navLinks.forEach(el => el.classList.toggle('dark-mode'));
 
     // 🌙/☀️ icon and label toggle
-    if (body.classList.contains('dark-mode')) {
-      toggleButton.textContent = '☀️ Light Mode';
-    } else {
-      toggleButton.textContent = '🌙 Dark Mode';
-    }
+    toggleButton.textContent = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
   });
 </script>
+  
 </body>
 </html>
