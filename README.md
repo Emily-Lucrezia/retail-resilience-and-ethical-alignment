@@ -1,4 +1,4 @@
-# Mapping Retail Resilience and Ethical Alignment in Post-Pandemic UK Town Centres
+# Retail Resilience and Ethical Alignment: Sector Scoring Report for UK Town Centres
 
 Welcome to the GitHub Pages site for my capstone project, part of the **Professional Certificate in Data Analytics**. This project investigates how UK retail sectors have evolved from 2013 to 2025, with a particular focus on **post-pandemic recovery** and **ethical alignment**.
 
@@ -19,7 +19,7 @@ The goal is to support **data-driven planning decisions** that balance economic 
 - **Transparent Methodology**: Step-by-step explanation of data sources, cleaning, and scoring logic
 - **Accessible Design**: Responsive layout with high-contrast visuals, readable fonts, and keyboard-friendly navigation
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **Python**: Data cleaning, scoring logic, and visualizations
 - **HTML & CSS**: Custom GitHub Pages layout and styling
